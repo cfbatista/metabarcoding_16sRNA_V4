@@ -4,7 +4,7 @@ library("phangorn")
 # Align Sequences
 sequences <- getSequences(seqtab.nochim)
 names(sequences) <- sequences
-alignmnet <- AlignSeqs(DNAStringSet(seqs))
+alignmnet <- AlignSeqs(DNAStringSet(sequences))
 
 #change sequence alignment output unto phydat structure
 phang.align <- phyDat(as(alignmnet, "matrix"), type="DNA")

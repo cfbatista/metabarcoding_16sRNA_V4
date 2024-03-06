@@ -18,3 +18,5 @@ track = cbind(out, sapply(dadaFs, getN), sapply(dadaRs, getN),
 colnames(track) = c("Trimmed", "Filtered", "denoisedF", "denoisedR", "merged", "nonchim")
 track = cbind(data.frame(SampleID = sample.names), track)
 
+head(track)
+

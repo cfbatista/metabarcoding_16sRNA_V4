@@ -1,12 +1,12 @@
 # Assign Taxonomy
-taxaSilva <- assignTaxonomy(seqTab.nochim, 
+taxaSilva <- assignTaxonomy(seqtab.nochim, 
                             'C:/Users/camil/Documents/databases/silva_nr99_v138.1_train_set.fa.gz',  multithread = TRUE)
 
 
 taxaSilva <- addSpecies(taxaSilva, 'C:/Users/camil/Documents/databases/silva_species_assignment_v138.1.fa.gz')
 
 #tempo execução 40 m
-taxaGTDB <- assignTaxonomy(seqTab.nochim, 
+taxaGTDB <- assignTaxonomy(seqtab.nochim, 
                            'C:/Users/camil/Documents/databases/GTDB_bac120_arc53_ssu_r207_fullTaxo.fa.gz',
                            multithread = TRUE)
 
@@ -14,7 +14,7 @@ taxaGTDB <- addSpecies(taxaGTDB, 'C:/Users/camil/Documents/databases/GTDB_dada2_
 
 
 # tempo execução 10 m
-taxaRDP <- assignTaxonomy(seqTab.nochim, 
+taxaRDP <- assignTaxonomy(seqtab.nochim, 
                           'C:/Users/camil/Documents/databases/rdp_train_set_18.fa.gz',
                           multithread = TRUE)
 

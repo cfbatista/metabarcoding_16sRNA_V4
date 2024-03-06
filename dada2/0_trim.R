@@ -4,9 +4,11 @@ library("ggplot2")
 setwd("C:/Users/camil/Documents/TCC/covid/dada2")
 
 # Config folders and paths
-fastq = "raw_data"
+path = "C:/Users/camil/Documents/TCC/covid/dada2/raw_data"
+images = "images"
+if(!dir.exists(images)) dir.create(images)
 
-head(list.files(fastq), 20)
+head(list.files(path), 20)
 
 # Forward and reverse fastq filenames have format: SAMPLENAME_R1_001.fastq and SAMPLENAME_R2_001.fastq
 fnFs <- sort(list.files(path, pattern="_R1_001.fastq", full.names = TRUE))

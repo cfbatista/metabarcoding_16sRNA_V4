@@ -11,5 +11,4 @@ seqtab = makeSequenceTable(mergers)
 table(nchar(getSequences(seqtab)))
 head(mergers[[1]])
 
-head(track)
 saveRDS(seqtab, "seqtab.rds")
