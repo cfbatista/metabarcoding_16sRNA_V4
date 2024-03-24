@@ -21,8 +21,8 @@ ps_G4 = ps %>%
 
 # ------------------------------- Wilcoxon test
 
-rich = estimate_richness(ps_G4_prune)
-pairwise.wilcox.test(rich$Shannon, sample_data(ps_G4_prune)$groups_beta)
+rich = estimate_richness(rlogMat_G1)
+pairwise.wilcox.test(rich$Shannon, sample_data(ps_G1)$groups_beta)
 
 
 # ------------------------------- GRUPO 1
